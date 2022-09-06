@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="c-responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>Bhojan</h1>
+            </div>
+
+            <a href="#" class="buttonlink">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a class="con" href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script>
+            const togglebutton = document.getElementsByClassName('buttonlink')[0]
+            const navlink = document.getElementsByClassName('nav-link')[0]
+
+            togglebutton.addEventListener('click', () => {
+                navlink.classList.toggle('active')
+            }
+            )
+        </script>
+    </header>
+    <main>
+        <div class="contents">
+            <div class="info">
+                <h2>Say Hello</h2>
+                <p>We’re a friendly bunch here at Bhojan. Place an inquiry and we'll get back to you the same day</p>
+            </div>
+            <div class="contact">
+                <form action="#">
+                    <label for="name">Name*</label><br>
+                    <input type="text" name="name" id="name" placeholder="Your name" required><br>
+                    <label for="name">Last name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Your last name"><br>
+                    <label for="name">Email*</label><br>
+                    <input type="email" name="name" id="name" placeholder="Your Email" required><br>
+                    <label for="msg">Message</label><br>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                    <!-- <input type="submit" class="button" value="Send message"> -->
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/food2.jpg" alt="" >
+        </div>
+    </main>
+    <footer>
+        <div class="fcontainer">
+            <div class="fbox1">
+                <h3>Bhojan Catering</h3>
+                <p>We’re a catering business serving the Greater Chicago area, and making sure your event is remembered
+                    for all the delicious food.</p>
+            </div>
+            <div class="fbox2">
+                <h3>Contacts</h3>
+                <a href="mailto:Hello@bhojan.com">Hello@bhojan.com</a><br>
+                <a href="tel:+919235145876">9235145876</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

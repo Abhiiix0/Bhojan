@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="s-responsive.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>Bhojan</h1>
+            </div>
+
+            <a href="#" class="buttonlink">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a class="sv" href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script>
+            const togglebutton = document.getElementsByClassName('buttonlink')[0]
+            const navlink = document.getElementsByClassName('nav-link')[0]
+
+            togglebutton.addEventListener('click', () => {
+                navlink.classList.toggle('active')
+            }
+            )
+        </script>
+    </header>
+    <main>
+        <div class="c-heading">
+            <h2>We can catter to all of your needs</h2>
+        </div>
+        <div class="container">
+            <div class="box1"> 
+                <p>From small, family events to grand coprate gatherings, We offer a huge variety of service here at Bhojan. Let us know exaactly what your needs are and we will do our best to make your event memorable</p><br>
+                <p>Even if you don't see your occasion listed nelow, We encaurage you to get in touch. we'll be glade to provide you with a custom quote.</p>
+            </div>
+            <div class="box2">
+                <div class="table1">
+                    <h3>SERVICE</h3>
+                    <ul>
+                        <li>Birthday;</li>
+                        <li>Anniversaries;</li>
+                        <li>Christenings;</li>
+                        <li>Weddings;</li>
+                    </ul>
+                </div>
+                <div class="table2">
+                    <h3>EXTRA SERVICE</h3>
+                    <ul>
+                        <li>Plate and glass rental;</li>
+                        <li>Table decore;</li>
+                        <li>Allergy-friendly menus;</li>
+                        <li>Dessert table;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="gitouch">
+            <h3>First, we eat. Then we do everything else. Let us take care of food at your special event.</h3>
+            <a href="contact.html">Get in touch</a>
+        </div>
+    </main>
+    <footer>
+        <div class="fcontainer">
+            <div class="fbox1"> 
+                <h3>Bhojan Catering</h3>
+                <p>We’re a catering business serving the Greater Chicago area, and making sure your event is remembered for all the delicious food.</p>
+            </div>
+            <div class="fbox2">
+                <h3>Contacts</h3>
+                <a href="mailto:Hello@bhojan.com">Hello@bhojan.com</a><br>
+                <a href="tel:+919235145876">9235145876</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
